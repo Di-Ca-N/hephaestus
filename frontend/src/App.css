@@ -1,0 +1,73 @@
+.header {
+  background-color: var(--independence);
+  padding: 1em;
+  font-size: 2em;
+  font-weight: bold;
+  font-family: 'Times New Roman', Times, serif;
+  text-transform: uppercase;
+  color: var(--silver);
+  height: 3em;
+}
+
+main {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  margin: 1em auto;
+  width: 95%;
+  padding: 1em;
+}
+
+main .file-container {
+  position: relative;
+}
+
+main .file-display {
+  border: 3px dashed var(--spanish-gray);
+  height: fit-content;
+  color: black;
+  font-size: 24pt;
+  border-radius: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 1em 1em;
+  flex-direction: row;
+  flex-flow: wrap;
+}
+
+main .file-upload {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--spanish-gray);
+  padding: 1em;
+  border-radius: 24px;
+  margin-top: 8px;
+  font-size: 1.5em;
+  width: 100%;
+  box-shadow: 2px 2px 5px var(--silver-metallic);
+  cursor: pointer;
+}
+
+.file-upload:hover {
+  box-shadow: 4px 4px 10px var(--silver-metallic);
+}
+
+.hidden {
+  display: none;
+}
+
+.next-button {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  position: absolute;
+  right: 8px;
+  bottom: 8px;
+  box-shadow: 2px 2px 5px var(--silver-metallic);
+  cursor: pointer;
+}
+
+.next-button:hover {
+  box-shadow: 4px 4px 10px var(--silver-metallic);
+}

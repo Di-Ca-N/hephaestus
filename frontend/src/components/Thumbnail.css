@@ -1,0 +1,48 @@
+.file-card {
+    position: relative;
+    border-radius: 16px;
+    overflow: hidden;
+    height: 85%;
+    width: calc(100% * 21px/29.7);
+    box-shadow: 2px 2px 5px var(--silver-metallic);
+    margin: 4px;
+}
+
+.file-card:hover {
+    box-shadow: 4px 4px 10px var(--silver-metallic);
+    transform: scale(101%);
+}
+
+.file-card button {
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    opacity: 0;
+    transition: opacity .2s;
+    background: transparent;
+    width: fit-content;
+    padding: 0;
+    color: var(--silver);
+}
+
+.file-card:hover button {
+    opacity: 100%;
+    cursor: pointer;
+}
+
+.file-card--label {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: white;
+    padding: .5em;
+    font-size: 18px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.file-card--label span:hover {
+    transform: translateX(10px);
+}
